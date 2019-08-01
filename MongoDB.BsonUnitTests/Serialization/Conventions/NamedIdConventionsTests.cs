@@ -24,7 +24,7 @@ namespace MongoDB.BsonUnitTests.Serialization.Conventions
     {
         private NamedIdMemberConvention _subject;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             _subject = new NamedIdMemberConvention(new[] { "One", "Two" });

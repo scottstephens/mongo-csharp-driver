@@ -25,7 +25,7 @@ namespace MongoDB.BsonUnitTests.Serialization.Conventions
     {
         private NamedExtraElementsMemberConvention _subject;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             _subject = new NamedExtraElementsMemberConvention(new[] { "One", "Two" });

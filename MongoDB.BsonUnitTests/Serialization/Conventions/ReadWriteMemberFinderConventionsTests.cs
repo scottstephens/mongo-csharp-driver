@@ -25,7 +25,7 @@ namespace MongoDB.BsonUnitTests.Serialization.Conventions
     {
         private ReadWriteMemberFinderConvention _subject;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             _subject = new ReadWriteMemberFinderConvention();

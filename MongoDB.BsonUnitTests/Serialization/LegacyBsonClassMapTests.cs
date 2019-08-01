@@ -74,7 +74,7 @@ namespace MongoDB.BsonUnitTests.Serialization
         }
 #pragma warning restore
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -128,7 +128,7 @@ namespace MongoDB.BsonUnitTests.Serialization
         }
 #pragma warning restore
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -210,7 +210,7 @@ namespace MongoDB.BsonUnitTests.Serialization
         }
 #pragma warning restore
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -292,7 +292,7 @@ namespace MongoDB.BsonUnitTests.Serialization
             public int PropertyUnmappedByLambda { get; set; }
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -332,7 +332,7 @@ namespace MongoDB.BsonUnitTests.Serialization
             public int X;
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -375,7 +375,7 @@ namespace MongoDB.BsonUnitTests.Serialization
             public string Y;
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -425,7 +425,7 @@ namespace MongoDB.BsonUnitTests.Serialization
             }
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -464,7 +464,7 @@ namespace MongoDB.BsonUnitTests.Serialization
             public int Id;
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support
@@ -484,7 +484,7 @@ namespace MongoDB.BsonUnitTests.Serialization
     [TestFixture]
     public class LegacyBsonClassMapResetTests
     {
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
 #pragma warning disable 618 // Obsoleted by lots of things related to legacy convention support

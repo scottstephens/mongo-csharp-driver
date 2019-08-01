@@ -26,7 +26,7 @@ namespace MongoDB.BsonUnitTests.Serialization.Conventions
     {
         private StringObjectIdIdGeneratorConvention _subject;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             _subject = new StringObjectIdIdGeneratorConvention();

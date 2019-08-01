@@ -14,6 +14,7 @@
 */
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -36,7 +37,9 @@ namespace MongoDB.Bson.Serialization
             {
                 Assembly.GetAssembly(typeof(object)), // mscorlib
                 Assembly.GetAssembly(typeof(Queue<>)), // System
-                Assembly.GetAssembly(typeof(HashSet<>)) // System.Core
+                Assembly.GetAssembly(typeof(HashSet<>)), // System.Core
+                Assembly.GetAssembly(typeof(Hashtable)),
+                Assembly.GetAssembly(typeof(Queue)),
             };
         }
 
