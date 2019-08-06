@@ -36,7 +36,7 @@ namespace MongoDB.DriverUnitTests.Operations
         private string _databaseName;
         private MongoServerInstance _primary;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetUp()
         {
             _primary = Configuration.TestServer.Primary;

@@ -41,7 +41,7 @@ namespace MongoDB.DriverUnitTests
         private MongoDatabase _database;
         private MongoCollection<BsonDocument> _collection;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _server = Configuration.TestServer;
@@ -2548,7 +2548,7 @@ namespace MongoDB.DriverUnitTests
             Assert.AreEqual(9, result.EmitCount);
             Assert.AreEqual(5, result.OutputCount);
             Assert.AreEqual(3, result.InputCount);
-            Assert.IsNotNullOrEmpty(result.CollectionName);
+            Assert.That(result.CollectionName, Is.Not.Null.Or.Empty);
 
             var expectedCounts = new Dictionary<string, int>
             {
@@ -2622,7 +2622,7 @@ namespace MongoDB.DriverUnitTests
                 Assert.AreEqual(9, result.EmitCount);
                 Assert.AreEqual(5, result.OutputCount);
                 Assert.AreEqual(3, result.InputCount);
-                Assert.IsNullOrEmpty(result.CollectionName);
+                Assert.That(result.CollectionName, Is.Null.Or.Empty);
 
                 var expectedCounts = new Dictionary<string, int>
                 {
@@ -2733,7 +2733,7 @@ namespace MongoDB.DriverUnitTests
                 Assert.AreEqual(9, result.EmitCount);
                 Assert.AreEqual(5, result.OutputCount);
                 Assert.AreEqual(3, result.InputCount);
-                Assert.IsNullOrEmpty(result.CollectionName);
+                Assert.That(result.CollectionName, Is.Null.Or.Empty);
 
                 var expectedCounts = new Dictionary<string, int>
                 {

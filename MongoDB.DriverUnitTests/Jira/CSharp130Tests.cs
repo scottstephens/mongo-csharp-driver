@@ -36,7 +36,7 @@ namespace MongoDB.DriverUnitTests.Jira.CSharp130
         private MongoDatabase _database;
         private MongoCollection _collection;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetup()
         {
             var clientSettings = Configuration.TestClient.Settings.Clone();

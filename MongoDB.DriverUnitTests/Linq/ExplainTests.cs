@@ -36,7 +36,7 @@ namespace MongoDB.DriverUnitTests.Linq
         private MongoServer _server;
         private MongoCollection _collection;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _server = Configuration.TestServer;

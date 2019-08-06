@@ -26,7 +26,7 @@ namespace MongoDB.DriverUnitTests
         private MongoClient _client;
         private MongoServer _server;
 
-        [TestFixtureSetUp()]
+        [OneTimeSetUp]
         public void TestFixtureSetUp()
         {
             _client = new MongoClient();

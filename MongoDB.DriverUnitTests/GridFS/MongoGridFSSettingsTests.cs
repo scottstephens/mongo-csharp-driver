@@ -25,7 +25,7 @@ namespace MongoDB.DriverUnitTests.GridFS
     {
         private MongoDatabase _database;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetup()
         {
             _database = Configuration.TestDatabase;

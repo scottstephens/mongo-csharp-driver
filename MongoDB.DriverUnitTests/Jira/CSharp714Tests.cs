@@ -38,7 +38,7 @@ namespace MongoDB.DriverUnitTests.Jira.CSharp714
         private IIdGenerator _generator = new AscendingGuidGenerator();
         private static int __maxNoOfDocuments = 100;
         
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetup()
         {
             _server = Configuration.TestServer;

@@ -29,7 +29,7 @@ namespace MongoDB.DriverUnitTests
         private MongoCollection<BsonDocument> _collection;
         private bool _isReplicaSet;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _server = Configuration.TestServer;

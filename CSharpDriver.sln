@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.Bson", "MongoDB.Bson\MongoDB.Bson.csproj", "{0E9A3A2A-49CD-4F6C-847C-DC79B4B65CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB.Bson", "MongoDB.Bson\MongoDB.Bson.csproj", "{0E9A3A2A-49CD-4F6C-847C-DC79B4B65CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.BsonUnitTests", "MongoDB.BsonUnitTests\MongoDB.BsonUnitTests.csproj", "{10A5FAC2-E26F-4726-B888-26D5B849F805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB.BsonUnitTests", "MongoDB.BsonUnitTests\MongoDB.BsonUnitTests.csproj", "{10A5FAC2-E26F-4726-B888-26D5B849F805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.Driver", "MongoDB.Driver\MongoDB.Driver.csproj", "{AE5166CD-76B0-4911-BD80-CED9521F37A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB.Driver", "MongoDB.Driver\MongoDB.Driver.csproj", "{AE5166CD-76B0-4911-BD80-CED9521F37A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.DriverUnitTests", "MongoDB.DriverUnitTests\MongoDB.DriverUnitTests.csproj", "{FBBF0D71-107F-49C4-8858-B3A4DC24AA33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB.DriverUnitTests", "MongoDB.DriverUnitTests\MongoDB.DriverUnitTests.csproj", "{FBBF0D71-107F-49C4-8858-B3A4DC24AA33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00502D63-7789-410D-B6BE-5F16327FF810}"
 	ProjectSection(SolutionItems) = preProject
@@ -107,5 +107,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AA4F6FD3-8844-4DF1-9944-0364C934B3F7} = {00502D63-7789-410D-B6BE-5F16327FF810}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8EBE2BB-46F5-4054-AF4E-DDD91D19E76A}
 	EndGlobalSection
 EndGlobal

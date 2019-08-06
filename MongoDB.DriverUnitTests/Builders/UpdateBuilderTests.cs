@@ -77,7 +77,7 @@ namespace MongoDB.DriverUnitTests.Builders
         private BsonDocument _docA1 = new BsonDocument("a", 1);
         private BsonDocument _docA2 = new BsonDocument("a", 2);
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetup()
         {
             _collection = Configuration.TestCollection;
@@ -849,7 +849,7 @@ namespace MongoDB.DriverUnitTests.Builders
             Assert.AreEqual(expected, update.ToJson());
         }
 
-        [Ignore]
+        [Ignore("was unexplained in last 1.x release")]
         [Test]
         public void TestReplaceWithInvalidFieldName()
         {

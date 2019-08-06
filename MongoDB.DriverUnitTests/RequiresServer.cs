@@ -19,6 +19,7 @@ using System.Linq;
 using System.Reflection;
 using MongoDB.Driver;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 
 namespace MongoDB.DriverUnitTests
 {
@@ -86,19 +87,19 @@ namespace MongoDB.DriverUnitTests
         public string VersionLessThan { get; set; }
 
         // methods
-        public void AfterTest(TestDetails details)
+        public void AfterTest(ITest test)
         {
-            InvokeMethod(details.Fixture, AfterTestMethodName);
+            InvokeMethod(test.Fixture, AfterTestMethodName);
         }
 
-        public void BeforeTest(TestDetails details)
+        public void BeforeTest(ITest test)
         {
             EnsureAuthentication();
             EnsureVersion();
             EnsureServerTypes();
             EnsureStorageEngine();
 
-            InvokeMethod(details.Fixture, BeforeTestMethodName);
+            InvokeMethod(test.Fixture, BeforeTestMethodName);
         }
 
         private void InvokeMethod(object fixture, string methodName)

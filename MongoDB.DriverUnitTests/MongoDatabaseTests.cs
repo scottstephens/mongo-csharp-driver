@@ -29,7 +29,7 @@ namespace MongoDB.DriverUnitTests
         private MongoServerInstance _primary;
         private MongoDatabase _database;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _server = Configuration.TestServer;

@@ -33,7 +33,7 @@ namespace MongoDB.DriverUnitTests.Jira.CSharp258
         private MongoDatabase _database;
         private MongoCollection<C> _collection;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetup()
         {
             _server = Configuration.TestServer;

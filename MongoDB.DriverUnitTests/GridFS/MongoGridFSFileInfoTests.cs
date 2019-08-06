@@ -29,7 +29,7 @@ namespace MongoDB.DriverUnitTests.GridFS
         private MongoDatabase _database;
         private MongoGridFS _gridFS;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetUp()
         {
             _server = Configuration.TestServer;

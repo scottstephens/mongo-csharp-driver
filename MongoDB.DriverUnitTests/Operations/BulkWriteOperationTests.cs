@@ -30,7 +30,7 @@ namespace MongoDB.DriverUnitTests.Operations
         private MongoServerInstance _primary;
         private MongoCollection<BsonDocument> _collection;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetUp()
         {
             _server = Configuration.TestServer;
@@ -606,7 +606,7 @@ namespace MongoDB.DriverUnitTests.Operations
             Assert.That(_collection.FindAll().SetFields(Fields.Exclude("_id")), Is.EquivalentTo(expectedDocuments));
         }
 
-        [Ignore]
+        [Ignore("was unexplained in last 1.x release")]
         [Test]
         [TestCase(false)]
         [TestCase(true)]
@@ -704,7 +704,7 @@ namespace MongoDB.DriverUnitTests.Operations
             Assert.That(_collection.FindAll().SetFields(Fields.Exclude("_id")), Is.EquivalentTo(expectedDocuments));
         }
 
-        [Ignore]
+        [Ignore("was unexplained in last 1.x release")]
         [Test]
         [TestCase(false)]
         [TestCase(true)]
@@ -718,7 +718,7 @@ namespace MongoDB.DriverUnitTests.Operations
             Assert.Throws<BsonSerializationException>(() => bulk.Execute());
         }
 
-        [Ignore]
+        [Ignore("was unexplained in last 1.x release")]
         [Test]
         [TestCase(false)]
         [TestCase(true)]
@@ -761,7 +761,7 @@ namespace MongoDB.DriverUnitTests.Operations
             Assert.That(_collection.FindAll().SetFields(Fields.Exclude("_id")), Is.EquivalentTo(expectedDocuments));
         }
 
-        [Ignore]
+        [Ignore("was unexplained in last 1.x release")]
         [Test]
         [TestCase(false)]
         [TestCase(true)]

@@ -24,7 +24,7 @@ namespace MongoDB.DriverUnitTests.Jira
         private MongoServer _server;
         private MongoDatabase _database;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetup()
         {
             _server = Configuration.TestServer;

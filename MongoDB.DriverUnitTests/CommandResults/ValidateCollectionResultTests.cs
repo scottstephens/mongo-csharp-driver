@@ -26,7 +26,7 @@ namespace MongoDB.DriverUnitTests.CommandResults
         private MongoDatabase _database;
         private MongoCollection<BsonDocument> _collection;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Setup()
         {
             _server = Configuration.TestServer;
