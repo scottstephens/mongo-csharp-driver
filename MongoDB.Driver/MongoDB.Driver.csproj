@@ -27,6 +27,9 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+	<CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
+	<CurrentMonthDay>$([System.DateTime]::Now.ToString(MMdd))</CurrentMonthDay>
+	<VersionPrefix>1.11.$(CurrentYear).$(CurrentMonthDay)</VersionPrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,6 +54,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\Keys\TemporaryKeyPair.snk</AssemblyOriginatorKeyFile>
+    <PackageId>MongoDB.Driver.VG</PackageId>
   </PropertyGroup>
   <ItemGroup>
   <!--

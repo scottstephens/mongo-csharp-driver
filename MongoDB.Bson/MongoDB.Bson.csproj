@@ -24,6 +24,9 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+	<CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
+	<CurrentMonthDay>$([System.DateTime]::Now.ToString(MMdd))</CurrentMonthDay>
+	<VersionPrefix>1.11.$(CurrentYear).$(CurrentMonthDay)</VersionPrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <CodeAnalysisRuleSet>..\CodeAnalysisRuleSet.ruleset</CodeAnalysisRuleSet>
@@ -42,6 +45,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\Keys\TemporaryKeyPair.snk</AssemblyOriginatorKeyFile>
+    <PackageId>MongoDB.Bson.VG</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\GlobalAssemblyInfo.cs">
